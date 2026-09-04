@@ -42,5 +42,10 @@ public class Program {
         seller.setName("Cris Bob");
         sellerDao.update(seller);
         System.out.println("Update completed");
+
+        System.out.println("\nTeste numero 6: seller delete");
+        Integer id = 2;
+        sellerDao.deleteById(id);
+        System.out.println("Id " + id + " deleted!");
     }
 }
